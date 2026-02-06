@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Delete User</title>
+
+<style>
+    body {
+        background-image: url("https://images.unsplash.com/photo-1521737604893-d14cc237f11d");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    .overlay {
+        background-color: rgba(0, 0, 0, 0.5);
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    h2 {
+        color: #ff6666;
+        margin-bottom: 20px;
+    }
+
+    input[type="text"] {
+        padding: 6px;
+        margin: 5px 0;
+        border-radius: 4px;
+        border: none;
+    }
+
+    input[type="submit"] {
+        background-color: red;
+        color: white;
+        border: none;
+        padding: 8px 16px;
+        font-weight: bold;
+        cursor: pointer;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+
+    input[type="submit"]:hover {
+        background-color: darkred;
+    }
+</style>
+</head>
+
+<body>
+<div class="overlay">
+<center>
+    <h2>Delete User</h2>
+
+    <form action="delete" method="post">
+        Name: <input type="text" name="uname" required><br><br>
+        <input type="submit" value="Delete">
+    </form>
+</center>
+</div>
+</body>
+</html>

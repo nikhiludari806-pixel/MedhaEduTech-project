@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Home</title>
+<style>
+    body {
+        /* Background image */
+        background-image: url("https://images.unsplash.com/photo-1521737604893-d14cc237f11d");
+        background-size: cover;         /* Cover the full screen */
+        background-repeat: no-repeat;   /* Do not repeat */
+        background-position: center;    /* Center the image */
+        background-attachment: fixed;   /* Image stays fixed on scroll */
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    /* Optional overlay for readability */
+    .overlay {
+        background-color: rgba(0, 0, 0, 0.5); /* semi-transparent dark overlay */
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    h1 {
+        color: #00ff99;
+        margin-bottom: 30px;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        margin: 0 15px;
+        padding: 8px 16px;
+        border: 1px solid white;
+        border-radius: 5px;
+    }
+
+    a:hover {
+        background-color: #00ff99;
+        color: black;
+        transition: 0.3s;
+    }
+</style>
+</head>
+<body>
+<div class="overlay">
+    <h1>USER MANAGEMENT SYSTEM</h1>
+    <div>
+        <a href="register.html">Register</a>
+        <a href="login.html">Login</a>
+        <a href="update.html">Update</a>
+        <a href="delete.html">Delete</a>
+    </div>
+</div>
+</body>
+</html>

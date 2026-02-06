@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>New Registration Form</title>
+<style>
+    body {
+        background-image: url("https://images.unsplash.com/photo-1521737604893-d14cc237f11d");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    .overlay {
+        background-color: rgba(0, 0, 0, 0.5); /* semi-transparent overlay */
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    h1 {
+        color: #00aaff;
+        margin-bottom: 20px;
+    }
+
+    table {
+        color: white;
+    }
+
+    input[type="text"], input[type="password"], input[type="email"] {
+        padding: 6px;
+        margin: 5px 0;
+        border-radius: 4px;
+        border: none;
+    }
+
+    input[type="submit"], input[type="reset"] {
+        padding: 8px 16px;
+        font-weight: bold;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+
+    input[type="submit"] {
+        background-color: #00ff99;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #00cc77;
+        transition: 0.3s;
+    }
+
+    input[type="reset"] {
+        background-color: gray;
+        color: white;
+    }
+
+    input[type="reset"]:hover {
+        background-color: #555;
+        transition: 0.3s;
+    }
+</style>
+</head>
+<body>
+<div class="overlay">
+<center>
+    <h1>NEW REGISTRATION FORM</h1>
+    <form action="register1" method="post">
+        <table>
+            <tr>
+                <td>Name:</td>
+                <td><input type="text" name="uname" required></td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td><input type="password" name="pwd" required></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" name="mail" required></td>
+            </tr>
+            <tr>
+                <td>Address:</td>
+                <td><input type="text" name="address" required></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="Register">
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+</center>
+</div>
+</body>
+</html>
